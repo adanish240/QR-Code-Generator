@@ -1,0 +1,4 @@
+qr/processor/QRProcessor.class
+qr/reader/ExcelFileReader.class
+qr/writer/ExcelWriter.class
+qr/Application.class
