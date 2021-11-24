@@ -4,7 +4,6 @@ import com.google.zxing.*;
 import com.google.zxing.client.j2se.MatrixToImageWriter;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -12,7 +11,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
 
-public class Application {
+public class QrApplication {
     public static void main(String args[]) throws WriterException, IOException, NotFoundException
     {
         String inputFilePath = "/Users/adanish/QR-Code-Generator/QR-Code-Generator/files/inbound/FKATAK 02 100297600.csv";
@@ -32,7 +31,7 @@ public class Application {
             String charset = "UTF-8";
             Map<EncodeHintType, ErrorCorrectionLevel> hashMap = new HashMap<EncodeHintType, ErrorCorrectionLevel>();
             hashMap.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.L);
-            generateQRcode(data, path, charset, hashMap, 200, 200);//increase or decrease height and width accodingly
+            generateQRcode(data, path, charset, hashMap, 500, 500);//increase or decrease height and width accodingly
             System.out.println("QR Code created successfully.");
             headerIndex = 1;
             data = "";
