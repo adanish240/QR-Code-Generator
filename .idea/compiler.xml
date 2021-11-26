@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="PDF-Generator" />
+        <module name="QRCode-Generator" />
       </profile>
     </annotationProcessing>
   </component>
