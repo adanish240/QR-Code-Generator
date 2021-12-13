@@ -11,6 +11,7 @@
     <modules>
         <module>PDF-Generator</module>
         <module>QRCode-Generator</module>
+        <module>BARCode-Generator</module>
     </modules>
 
     <properties>
